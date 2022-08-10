@@ -1,0 +1,43 @@
+<div class="nav-row">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>HOME PAGE</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        {% load static %}
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"/>
+       
+    </head>
+    
+        
+        
+        <link rel="stylesheet" href="{% static '/css/navbar.css' %}" />
+    
+ 
+    <div class="logo-div">
+    <img src="{% static '/images/logo.png' %}" class="logo" alt="logo" />
+  </div>
+  <nav class="nav">
+    <div class="nav-list">
+      <a class="nav-a" href="/">Home</a>
+      <a class="nav-a" href="#">Services</a>
+      <a class="nav-a" href="/contact">Contact Us</a>
+      <a class="nav-a" href="/faq">FAQs</a>
+      <a class="nav-a" href="#">API</a>
+      <a class="nav-a" href="/profile">profile</a>
+    </div>
+  </nav>
+  <div class="btns">
+    <a href="/signin"><button class="white-btn">Log In</button></a>
+    <a href="/register"><button class="blue-btn">Register</button></a>
+    <a href="/signout"><button class="white-btn">Log out</button></a>
+  </div>
+</div>

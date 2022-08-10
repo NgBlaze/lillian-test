@@ -1,0 +1,146 @@
+body {
+    font-family: outfit;
+  }
+  /*nav bar*/
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+  
+    row-gap: 50px;
+    padding: 30px 10px;
+    background-color: #f3fafd;
+  }
+  nav {
+    list-style: none;
+  }
+  .nav-list {
+    row-gap: 20px;
+  }
+  .nav-a {
+    margin-left: 20px;
+  }
+  .logo-div {
+    width: 250px;
+    height: 70px;
+  }
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .white-btn {
+    width: 120px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #81B6C4;
+    color: #163037;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  }
+  
+  .blue-btn {
+    width: 120px;
+    height: 25px;
+  
+    border-radius: 20px;
+    border: 1px solid #81B6C4;
+    color: #163037;
+    background-color: #81b6c4;
+    font-family: "outfit", sans-serif;
+  
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  }
+  .white-btn:hover {
+    background-color: #81b6c4;
+    opacity: 70%;
+  }
+  .blue-btn:hover {
+    opacity: 90%;
+    background-color: #fff;
+  }
+  
+  .navlist {
+    color: #81b6c4;
+    padding-left: 1000px;
+  }
+  a:hover,
+  a:active {
+    color: #163037;
+  }
+  
+  @media (min-width: 801px) {
+    .hidesidebar,
+    .sidenav {
+      display: none;
+    }
+  }
+  /* Responsiveness */
+  @media (max-width: 800px) {
+    .nav-row {
+      display: none;
+    }
+    .hidesidebar {
+      color: #81b6c4;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 20px;
+    }
+    .blue-btn {
+      width: auto;
+      height: 25px;
+      margin-top: 8px;
+      border-radius: 20px;
+      border: 1px solid #81B6C4;
+      color: #163037;
+      background-color: #81b6c4;
+      font-family: "outfit", sans-serif;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+    }
+    .blue-btn:hover {
+      opacity: 90%;
+      background-color: #fff;
+    }
+  
+    .sidenav {
+      height: 100%;
+      width: 0;
+  
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #f3fafd;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #000;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidenav a:hover {
+      color: #818181;
+    }
+  
+    .sidenav .closebtn {
+      color: #81b6c4;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
