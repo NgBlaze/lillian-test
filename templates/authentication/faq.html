@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+{% extends 'main.html' %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +18,8 @@
     <link rel="stylesheet" href="{% static '/css/faq.css' %}" />
   </head>
   <body>
+
+    {% block content %}
     
       <div class="header__container">
         <button  onclick="history.back()" class="header__button"><span>&#8592;</span>Back</button>
@@ -189,5 +193,7 @@
       </div>
     </footer>
     </main>
+
+    {% endblock %}
   </body>
 </html>

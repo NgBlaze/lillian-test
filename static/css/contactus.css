@@ -2,9 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #F3FAFD;
+  /* background-color: #F3FAFD; */
   font-family: 'Outfit', sans-serif;
 }
+
+html{
+  background-color: #F3FAFD;
+}
+
+.contact-us__container{
+  
+  background-color: #F3FAFD;
+}
+
 .contact-us__header-content{
   display: grid;
   grid-template-rows: 50% 50%;
@@ -28,6 +38,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  
 }
 
 .contact-us__input-box{
